@@ -1,57 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safe Toc</title>
-    <!--Font awesome-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-    <!--Documento Css-->
-    <link rel="stylesheet" href="style.css">
+    <title>Enciclopedia</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+          padding-right: 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="contenedor">
-        <nav class="navegador">
-            <img src="Logo diagonal.png" alt="SafeToc Logo" class="logo">
-            <ul class="menu">
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">¿Quienes somos?</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Publicidad</a>
-                </li>
-                <li>
-                    <a href="#">Contáctanos</a>
-                </li>
-            </ul>
-            <ul class="buscar">
-                <li>
-                    <a href="#">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-            <input size="15" autocomplete="off" placeholder="Buscar propiedades" id="menu_search_code" class="form-control" type="text" name="search[internal_id]" />
-<span class="input-group-btn">
-</span>
-        </nav>
-        <hr>
-        <a href=""></a>
-    <header class="enciclopedia">
-        <h1 class="titulo">Bienvenido a tu enciclopedia inmobiliaria</h1>
-        <input size="38px" autocomplete="off" placeholder="Busca tu palabra" id="menu_search_code" class="form-control2" type="text" name="search[internal_id]" />
-    <span class="input-group-btn">
-    </span>
-    <a href="#" class="boton">Buscar</a>
-    </header>
-    </div>
+    <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+          <!-- Top row, always visible -->
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title"></span>
+            <div class="mdl-layout-spacer"></div>
+            <img src="Logo diagonal.png" alt="Logo" width="7%">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                        mdl-textfield--floating-label mdl-textfield--align-right">
+              <label class="mdl-button mdl-js-button mdl-button--icon"
+                     for="waterfall-exp">
+                <i class="material-icons">search</i>
+              </label>
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="sample"
+                       id="waterfall-exp">
+              </div>
+            </div>
+          </div>
+          <!-- Bottom row, not visible on scroll -->
+          <div class="mdl-layout__header-row">
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Inicio</a>
+              <a class="mdl-navigation__link" href="">Comprar</a>
+              <a class="mdl-navigation__link" href="">Vender</a>
+              <a class="mdl-navigation__link" href="">Club de inversionistas</a>
+              <a class="mdl-navigation__link" href="">Contáctanos</a>
+            </nav>
+          </div>
+        </header>
+        <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">Menú</span>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Inicio</a>
+            <a class="mdl-navigation__link" href="">Comprar</a>
+            <a class="mdl-navigation__link" href="">Vender</a>
+            <a class="mdl-navigation__link" href="">Club de inversionistas</a>
+            <a class="mdl-navigation__link" href="">Contáctanos</a>
+          </nav>
+        </div>
+        <main class="mdl-layout__content">
+          <div class="page-content"><!-- Your content goes here --></div>
+        </main>
+      </div>
 </body>
 </html>

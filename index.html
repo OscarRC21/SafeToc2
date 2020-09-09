@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enciclopedia</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -15,13 +16,15 @@
 </head>
 <body>
     <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
-        <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <header class="mdl-layout__header mdl-layout__header--waterfall" id="menu">
           <!-- Top row, always visible -->
           <div class="mdl-layout__header-row">
+            <img src="Logo diagonal.png" alt="Logo" id="logo">
+            <label for="" class="hogar">¡Bienvenido a tu hogar!</label>
             <!-- Title -->
             <span class="mdl-layout-title"></span>
             <div class="mdl-layout-spacer"></div>
-            <img src="Logo diagonal.png" alt="Logo" width="7%">
+            <label for="" class="hogar">¿Cómo podemos ayudarte?</label>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                         mdl-textfield--floating-label mdl-textfield--align-right">
               <label class="mdl-button mdl-js-button mdl-button--icon"

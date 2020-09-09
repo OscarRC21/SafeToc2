@@ -1,95 +1,14 @@
-*{
-    box-sizing: 0;
-    padding: 0;
-    margin: 0;
+#logo{
+    margin-top: 4%;
+    width: 10%;
 }
-body{
-    background-color: #ffffff;
-    background-color: #ffffff;
-}
-
-a{
-    color: #000000;
-    text-decoration: none;
-    font-family: 'Playfair Display', serif;
-}
-ul{
-    list-style: none;
-}
-.contenedor{
-    width: 100%;
-    margin: auto;
-}
-.navegador{
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+#menu{
     background: #000000;
 }
-.logo{
-    width: 160px;
+.hogar{
+    padding: 2%;
+    font-size: x-large;
 }
-.navegador ul{
-    display: flex;
-}
-.navegador ul li a{
-    padding: 30px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    font-weight: bold;
-}
-.navegador ul li a:hover{
-    border-bottom: 2px solid #ffffff;
-}
-.navegador ul li{
-    padding: 20px;
-}
-.navegador ul.menu{
-    flex: 1;
-    margin-left: 80px;
-}
-.form-control{
-    height: 20px;
-    margin-bottom: 8%;
-}
-.buscar{
-    margin-bottom: 7%;
-}
-hr{
-    height: 1px;
-    background-color: #000000;
-    border-color: #000000;
-}
-.titulo{
-    font-size: 120px;
-}
-.enciclopedia{
-    width: 100%;
-    height: 550px;
-    background: url('buscar.jpg') no-repeat center center/cover;
-    text-align: center;
-    color: #ffffff ;
-    margin-top: 5px;
-}
-.form-control2{
-    height: 70px;
-    margin-right: 19px;
-    font-size: 60px;
-    margin-top: 20px;
-}
-.boton{
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 20px 60px;
-    background: #262626;
-    color: #ffffff;
-    font-size: 35px;
-    margin-top: 30px;
-    border: 1px solid #fff;
-}
-.boton:hover{
-    opacity: .7;
+nav a {
+    font-size: x-large;
 }

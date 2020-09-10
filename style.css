@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 #logo{
     margin-top: 4%;
     width: 10%;
@@ -6,7 +12,7 @@
     background: #000000;
 }
 .hogar{
-    padding: 2%;
+    padding: 2%;    
     font-size: large;
 }
 nav{

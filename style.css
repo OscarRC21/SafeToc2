@@ -39,4 +39,7 @@ main{
     margin: 1% 0 0 0;
     position: relative;
     width: 70%;
+    outline: 1px blue;
+    outline-style: none;
+    border-radius: 100px;
 }

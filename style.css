@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 #logo{
     margin-top: 4%;
     width: 10%;
@@ -6,7 +12,7 @@
     background: #000000;
 }
 .hogar{
-    padding: 2%;
+    padding: 2%;    
     font-size: large;
 }
 nav{
@@ -29,7 +35,7 @@ main{
 #prueba{
     background-color: gray;
     height: 12%;
-    width: 72%;
+    width: 74%;
     position: absolute;
     opacity: .6;
     margin: 0 14%;
@@ -42,4 +48,17 @@ main{
     outline: 1px blue;
     outline-style: none;
     border-radius: 100px;
+}
+
+#menu_search_code{
+    margin-left: 2%;
+}
+
+#b1{
+    margin-top: -.8%;
+    background-color: black;
+}
+
+#buscar{
+    color: white;
 }

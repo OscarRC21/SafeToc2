@@ -35,7 +35,7 @@ main{
 #prueba{
     background-color: gray;
     height: 12%;
-    width: 72%;
+    width: 74%;
     position: absolute;
     opacity: .6;
     margin: 0 14%;
@@ -45,4 +45,17 @@ main{
     margin: 1% 0 0 0;
     position: relative;
     width: 70%;
+}
+
+#menu_search_code{
+    margin-left: 2%;
+}
+
+#b1{
+    margin-top: -.8%;
+    background-color: black;
+}
+
+#buscar{
+    color: white;
 }

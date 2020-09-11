@@ -71,6 +71,9 @@ main{
     text-decoration: none;
 }
 
+.navigation-footer__link:hover {
+    color: white;
+}
 .uno {
     float: left;
 }
@@ -86,12 +89,6 @@ main{
 #info {
     margin-top: -2.5%;
 }
-
-
-
-
-
-
 
 #menu_search_code{
     margin-left: 2%;

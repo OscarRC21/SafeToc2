@@ -28,13 +28,13 @@ main{
     background-color: #000000;
     font-size: 50px;
     display: inline-block;
-    padding: 0 19%;
-    margin: 2% 0 0 0;
+    width: 74%;
+    margin: 13% 0 0 2%;
     color: #ffffff;
 }
 #prueba{
     background-color: gray;
-    height: 12%;
+    height: 14%;
     width: 74%;
     position: absolute;
     opacity: .6;
@@ -44,10 +44,10 @@ main{
     font-size: 30px;
     margin: 1% 0 0 0;
     position: relative;
-    width: 70%;
-    outline: 1px blue;
+    width: 65%;
     outline-style: none;
-    border-radius: 100px;
+    border-radius:17px;
+    border: 3px solid #000000;
 }
 
 #menu_search_code{
@@ -55,7 +55,7 @@ main{
 }
 
 #b1{
-    margin-top: -.8%;
+    margin-top: -1%;
     background-color: black;
 }
 

@@ -2,9 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-#logo{
+}#logo{
     width: 10%;
     position: absolute;
     z-index: 4;
@@ -29,39 +27,47 @@
 nav{
     font-size: large;
 }
-#enciclopedia{
-    text-align: center;
+#imagen{
+    margin: 4% 0 0 0;
+    float: left;
+    background-color: yellowgreen;
+    height: 800px;
 }
-main{
-    background: url('./imagenes/buscar.jpg') no-repeat center  center/cover;
+.prueba{
+    height: 535px;
+
 }
-#titulo{
-    background-color: #000000;
-    font-size: 50px;
-    display: inline-block;
-    width: 74%;
-    margin: 13% 0 0 2%;
-    color: #ffffff;
+#inputs{
+    float: left;
+    margin: 4% 0 0 0;
+    width: 58.79%;
+    text-align: right;
+    background-color: violet;
 }
-#prueba{
-    background-color: gray;
-    height: 14%;
-    width: 74%;
-    position: absolute;
-    opacity: .6;
-    margin: 0 14%;
+#enviar{
+    margin: 6% 50%;
 }
-.form-control2{
-    font-size: 30px;
-    margin: 1% 0 0 0;
-    position: relative;
-    width: 65%;
-    outline-style: none;
-    border-radius:17px;
+#uno{
+    font-size: xx-large;
+}
+#dos{
+    font-size: large;
+}
+#linea{
+    background-color: yellow;
+    height: 10px;
+    width: 50%;
+    margin-left: 50%;
+}
+.nombre{
+    display: block;
+    margin: 4% 0 0 10%;
+    font-size: x-large;
+    width: 85%;
+    border-radius: 17px;
     border: 3px solid #000000;
+    outline-style: none;
 }
-
-
 .navigation-footer {
     background-color: black;
     width: 100%;
@@ -102,18 +108,4 @@ main{
 }
 
 #info {
-    margin-top: -2.5%;
-}
-
-#menu_search_code{
-    margin-left: 2%;
-}
-
-#b1{
-    margin-top: -1%;
-    background-color: black;
-}
-
-#buscar{
-    color: white;
-}
+    margin-top: -2.5%;}

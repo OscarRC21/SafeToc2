@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enciclopedia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="renta.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -66,16 +66,23 @@
           </nav>
         </div>
         <main class="mdl-layout__content">
-          <div class="page-content" id="enciclopedia">
-             <div id="buscador">
-                <h1 id="titulo">Enciclopedia inmobiliaria</h1>
-                <div id="prueba"></div>
-                <input autocomplete="off" placeholder="Busca tu palabra" id="menu_search_code" class="form-control2" type="text" name="search[internal_id]" />
-                <button class="mdl-button mdl-js-button mdl-button--fab" id="b1">
-                  <i class="material-icons" id="buscar">search</i>
-                </button>
-              </div>
-              <footer class="footer">
+          <div class="page-content">
+             <div id="imagen">
+                 <img src="imagenes/vender.jpg" alt="prueba" class="prueba">
+             </div>
+             <div id="inputs">
+                 <b id="uno">OFREZCO INMUEBLE</b>
+                 <hr id="linea">
+                <b id="dos">Tengo un inmueble que quiero vender</b>
+                <input type="text" name="oscar" class="nombre" placeholder="  Nombre">
+                <input type="text" name="oscar" class="nombre" placeholder="  E-mail">
+                <input type="text" name="oscar" class="nombre" placeholder="  Telefono">
+                <input type="text" name="oscar" class="nombre" placeholder="  Dirección del inmueble">
+                <input type="text" name="oscar" class="nombre" placeholder="  Tipo de inmueble">
+                <input type="text" name="oscar" class="nombre" placeholder="  Valor aproximado">
+                <button id="enviar">Enviar</button>
+             </div>
+             <footer class="footer">
                 <nav class="navigation-footer">
                   <div class="uno" style="width: 10%; margin-left: 3%;"> 
                     <img src="./imagenes/Logo-blancas.png" alt="Logo SafeToc letras blancas" id="imgfooter" class="navigation-footer" style="margin-left: 2%;">
@@ -100,7 +107,9 @@
                 </nav>
               </footer>
         </div>
+        
         </main>
+
       </div>
 
 </body>

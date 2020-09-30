@@ -12,11 +12,11 @@
     margin-left: 8%;
 }
 #menu{
-    background: #000000;
+    background: #171b22;
 }
 #visible{
     position: fixed;
-    background-color: #000000;
+    background-color: #171b22;
     margin-top: 4%;
     width: 100%;
 }
@@ -31,33 +31,45 @@ nav{
     margin: 4% 0 0 0;
     float: left;
     background-color: yellowgreen;
-    height: 800px;
+    height: 200%;
+    width: 50%;
 }
 .prueba{
-    height: 535px;
+    height: 87.9vh;
+    width: 100%;
 
 }
 #inputs{
-    float: left;
+    float: right;
     margin: 4% 0 0 0;
-    width: 58.79%;
+    width: 50%;
     text-align: right;
-    background-color: violet;
 }
 #enviar{
     margin: 6% 50%;
+    background-color: gainsboro;
+    font-size: large;
+    border-radius: 25px;
+    width: 15%;
+    color: black;
 }
 #uno{
-    font-size: xx-large;
+    font-size: 280%;
+    font-family: 'Crimson Text', serif;
+    font-weight: lighter;
+    margin-right: 5%;
 }
 #dos{
-    font-size: large;
+    font-size: x-large;
+    font-weight: normal;
+    margin-right: 5%;
 }
 #linea{
     background-color: yellow;
     height: 10px;
-    width: 50%;
-    margin-left: 50%;
+    width: 60%;
+    margin: 0 0 0 35%;
+    border: 0;
 }
 .nombre{
     display: block;

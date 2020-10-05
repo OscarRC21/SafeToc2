@@ -90,12 +90,13 @@ main{
     color: white;
 }
 .uno {
+    margin-right: 14%;
     float: left;
+    white-space: nowrap;
 }
 
 #owo {
-    width: 80%;
-    margin-left: 5%;
+   
     text-align: left;
     
 

@@ -14,11 +14,11 @@
     margin-left: 8%;
 }
 #menu{
-    background: #000000;
+    background: #171b22;
 }
 #visible{
     position: fixed;
-    background-color: #000000;
+    background-color: #171b22;
     margin-top: 4%;
     width: 100%;
 }
@@ -30,17 +30,17 @@ nav{
     font-size: large;
 }
 #enciclopedia{
-    text-align: center;
-}
-main{
     background: url('./imagenes/buscar.jpg') no-repeat center  center/cover;
+    text-align: center;
+    padding: 0 0 60% 0;
 }
 #titulo{
-    background-color: #000000;
-    font-size: 50px;
+    background-color: #171b22;
+    font-size: 3.5vw;
+    font-weight: 100;
     display: inline-block;
     width: 74%;
-    margin: 13% 0 0 2%;
+    margin: 5% 0 0 2%;
     color: #ffffff;
 }
 #prueba{
@@ -52,7 +52,7 @@ main{
     margin: 0 14%;
 }
 .form-control2{
-    font-size: 30px;
+    font-size: 2.5vw;
     margin: 1% 0 0 0;
     position: relative;
     width: 65%;
@@ -61,49 +61,37 @@ main{
     border: 3px solid #000000;
 }
 
-
-.navigation-footer {
-    background-color: black;
+#footer{
+    height: fit-content;
     width: 100%;
-    height: 100%;
+    background-color: #171b22;
+    float: inline-end;
 }
-.footer{
-    margin-top: 50%;
-    background-color: #000000;
-    position: absolute;
-}
-#imgfooter {
-    margin-left: 10%;
-    display: inline-block;
-}
-
-.navigation-footer__link {
-    color:white;
-    display: block;
-    margin-top: 5%;
-    margin-left: 30%;
-    margin-bottom: 5%;
-    text-decoration: none;
-}
-
-.navigation-footer__link:hover {
-    color: white;
-}
-.uno {
-    margin-right: 14%;
+#logo2{
     float: left;
-    white-space: nowrap;
+    height: 3%;
+    width: 10%;
+    margin: 1% 0 0 3%;
 }
-
-#owo {
-   
-    text-align: left;
-    
-
+#imagenf{
+    height: 100%;
+    width: 100%;
 }
-
-#info {
-    margin-top: -2.5%;
+.columna a:hover{
+    color: #ffffff;
+}
+.columna{
+    display: inline-block;
+    margin: 0 0 0 16%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3vw;
+    font-style: normal;
+}
+.columna a{
+    display: block;
+    color: #ffffff;
+    padding: 8% 0;
 }
 
 #menu_search_code{
@@ -112,7 +100,7 @@ main{
 
 #b1{
     margin-top: -1%;
-    background-color: black;
+    background-color: #171b22;
 }
 
 #buscar{

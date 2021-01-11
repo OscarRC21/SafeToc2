@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}#logo{
+    width: 10%;
+    position: absolute;
+    z-index: 4;
+    margin: -1.5% 0 0% 3%;
+}
+#bienvenido{
+    margin-left: 8%;
+}
+#menu{
+    background: #171b22;
+}
+.hogar{
+    padding: 2%;
+    font-size: 1.2vw;
+    position: relative;
+    z-index: 6;
+}
+nav{
+    font-size: 1.4vw;
+}
+#visible{
+    position: fixed;
+    background-color: #171b22;
+    margin-top: 3%;
+    width: 100%;
+}
+#izquierdo{
+    float: left;
+    width: 64%;
+    margin-top: 6%;
+}
+#titulo{
+    margin-left: 13%;
+    margin-bottom: 2%;
+}
+#definicion{
+    margin-left: 20%;
+}
+.video {
+	position: relative;
+	padding-bottom: 56.25%; /* proporción 16:9 */
+	padding-top: 25px;
+    height: 0;
+    margin-left: 20%;
+}
+.video iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#youtube{
+    height: 100px;
+    width: 100%;
+}
+#derecho{
+    margin-top: 6%;
+    width: 25%;
+    display: inline-block;
+    margin-left: 9%;
+    padding-bottom: 25%;
+}
+#fondo{
+    background-color: #929292;
+    position: absolute;
+    height: 6%;
+    width: 25%;
+    margin-bottom: 2%;
+}
+#barra_buscar{
+    width: 100%;
+    font-size: 1vw;
+    margin-bottom: 3%;
+    position: relative;
+}
+#barra{
+    margin-top: 2.4%;
+    text-align: center;
+    margin-bottom: 2%;
+    padding: 0 5%;
+}
+#imagen{
+    border-style: groove;
+    margin-top: 3%;
+}
+#encabezado{
+    width: 95%;
+    background-color: #929292;
+    margin: 4% 3%;
+    text-align: center;
+    font-size: 1.7vw;
+    color: #000000;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#foto{
+    width: 95%;
+    margin: 4% 3%;
+}
+#foto-imagen{
+    width: 100%;
+    height: 100%;
+}
+#enlaces{
+    margin-top: 4%;
+    border-style: groove;
+}
+#footer{
+    height: fit-content;
+    width: 100%;
+    background-color: #171b22;
+    float: inline-end;
+}
+#logo2{
+    float: left;
+    height: 3%;
+    width: 10%;
+    margin: 1% 0 0 3%;
+}
+#imagenf{
+    height: 100%;
+    width: 100%;
+}
+.columna a:hover{
+    color: #ffffff;
+}
+.columna{
+    display: inline-block;
+    margin: 0 0 0 16%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3vw;
+    font-style: normal;
+}
+.columna a{
+    display: block;
+    color: #ffffff;
+    padding: 8% 0;
+}

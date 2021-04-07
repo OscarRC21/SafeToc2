@@ -18,10 +18,10 @@
     </style>
 </head>
 <body>
-  <div>
-    <img src="imagenes/Logo-blancas.png" alt="Logo" id="logo">
-  </div>
     <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+      <div>
+        <img src="imagenes/Logo-blancas.png" alt="Logo" id="logo">
+      </div>
         <header class="mdl-layout__header mdl-layout__header--waterfall" id="menu">
           <!-- Top row, always visible -->
           <div class="mdl-layout__header-row" id="ayuda">
@@ -34,7 +34,7 @@
                         mdl-textfield--floating-label mdl-textfield--align-right">
               <label class="mdl-button mdl-js-button mdl-button--icon"
                      for="waterfall-exp">
-                <i class="material-icons">search</i>
+                <i class="material-icons" style="z-index: 10;">search</i>
               </label>
               <div class="mdl-textfield__expandable-holder">
                 <input class="mdl-textfield__input" type="text" name="sample" placeholder="  Buscar en SafeToc"
@@ -47,24 +47,22 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->
             <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="inicio.html" style="font-size: larger;">Inicio</a>
-              <a class="mdl-navigation__link" href="compra-venta.html" style="font-size: larger;">Compra-venta</a>
-              <a class="mdl-navigation__link" href="Renta2.html" style="font-size: larger;">Renta</a>
-              <a class="mdl-navigation__link" href="" style="font-size: larger;">Club de inversionistas</a>
-              <a class="mdl-navigation__link" href="contactanos.html" style="font-size: larger;">Contáctanos</a>
+              <a class="mdl-navigation__link" href="inicio.html" style="font-size: 1.8vw;">Inicio</a>
+              <a class="mdl-navigation__link" href="compra-venta.html" style="font-size:  1.8vw;">Compra-venta</a>
+              <a class="mdl-navigation__link" href="Renta2.html" style="font-size:  1.8vw;">Renta</a>
+              <a class="mdl-navigation__link" href="" style="font-size:  1.8vw;">Club de inversionistas</a>
+              <a class="mdl-navigation__link" href="contactanos.html" style="font-size:  1.8vw;">Contáctanos</a>
             </nav>
           </div>
         </header>
-        <div class="mdl-layout__drawer">
+        <div class="mdl-layout__drawer" id="barraLateral">
           <span class="mdl-layout-title">Menú</span>
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="inicio.html">Inicio</a>
-            <a class="mdl-navigation__link" href="">Family Reunion</a>
-            <a class="mdl-navigation__link" href="">Blog</a>
-            <a class="mdl-navigation__link" href="">Bold</a> 
-            <a class="mdl-navigation__link" href="">Propiedades</a>
-            <a class="mdl-navigation__link" href="">Agente</a>
-            <a class="mdl-navigation__link" href="">Oficina</a>
+            <a class="mdl-navigation__link" href="compra-venta.html">Compra-venta</a>
+            <a class="mdl-navigation__link" href="Renta2.html">Renta</a>
+            <a class="mdl-navigation__link" href="">Club de inversionistas</a>
+            <a class="mdl-navigation__link" href="contactanos.html">Contáctanos</a> 
           </nav>
         </div>
         <main class="mdl-layout__content">

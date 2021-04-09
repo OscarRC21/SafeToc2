@@ -2,14 +2,79 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}#logo{
+}
+#cajaLogo{
+    width: 5%;
+    height: 8%;
+    background-color: #171b22;
+    position: absolute;
+    z-index: 6;
+}
+#barraLateral{
+    font-size: 5vw;
+    background-color: #171b22;
+    color: #ffffff;
+    opacity: .80;
+}
+#logo{
     width: 10%;
     position: absolute;
-    z-index: 4;
-    margin: -1.5% 0 0% 3%;
+    z-index: 8;
+    margin: -1.5% 0 0 3%;
 }
 #bienvenido{
-    margin-left: 8%;
+    margin-left: 4%;
+}
+.material-icons{
+    color: white;
+    background-color: #171b22;
+    opacity: .70;
+    border-radius: 50%;
+    padding: 18%;
+}
+#caja-youtube{
+    width: 2%;
+    z-index: 10;
+    margin: 0 .3%;
+}
+#youtube{
+    width: 100%;
+    height: 100%;
+}
+#caja-facebook{
+    width: 2%;
+    z-index: 10;
+    margin: 0 .3%;
+}
+#facebook{
+    width: 100%;
+    height: 100%;
+}
+#caja-instagram{
+    width: 2%;
+    z-index: 10;
+    margin: 0 .3%;
+}
+#instagram{
+    width: 100%;
+    height: 100%;
+}
+#caja-whatsapp{
+    width: 2%;
+    z-index: 10;
+    margin: 0 .3%;
+}
+#whatsapp{
+    width: 100%;
+    height: 100%;
+}
+#caja-tiktok{
+    width: 2.8%;
+    z-index: 10;
+}
+#tik-tok{
+    width: 100%;
+    height: 100%;
 }
 #menu{
     background: #171b22;
@@ -166,3 +231,13 @@ nav{
     color: #ffffff;
     padding: 8% 0;
 }
+@media (max-width: 1024px) {
+    #logo{
+        z-index: 0;
+        width: 0;
+        }
+    #cajaLogo{
+        width: 0;
+        height: 0;
+        }
+    }

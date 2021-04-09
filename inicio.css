@@ -3,18 +3,79 @@
     padding: 0;
     margin: 0;
 }
+#cajaLogo{
+    width: 5%;
+    height: 8%;
+    background-color: #171b22;
+    position: absolute;
+    z-index: 6;
+}
 #barraLateral{
-    font-size: 0vw;
+    font-size: 5vw;
+    background-color: #171b22;
+    color: #ffffff;
+    opacity: .80;
 }
 #logo{
     width: 10%;
     position: absolute;
-    z-index: 4;
+    z-index: 8;
     margin: -1.5% 0 0 3%;
 }
 #bienvenido{
-    margin-left: 8%;
+    margin-left: 4%;
 
+}
+.material-icons{
+    color: white;
+    background-color: #171b22;
+    opacity: .70;
+    border-radius: 50%;
+    padding: 18%;
+}
+#caja-youtube{
+    width: 2%;
+    z-index: 10;
+    margin: 0 .3%;
+}
+#youtube{
+    width: 100%;
+    height: 100%;
+}
+#caja-facebook{
+    width: 2%;
+    z-index: 10;
+    margin: 0 .3%;
+}
+#facebook{
+    width: 100%;
+    height: 100%;
+}
+#caja-instagram{
+    width: 2%;
+    z-index: 10;
+    margin: 0 .3%;
+}
+#instagram{
+    width: 100%;
+    height: 100%;
+}
+#caja-whatsapp{
+    width: 2%;
+    z-index: 10;
+    margin: 0 .3%;
+}
+#whatsapp{
+    width: 100%;
+    height: 100%;
+}
+#caja-tiktok{
+    width: 2.8%;
+    z-index: 10;
+}
+#tik-tok{
+    width: 100%;
+    height: 100%;
 }
 #menu{
     background: #171b22;
@@ -34,7 +95,6 @@ nav{
     margin-top: 3%;
     width: 100%;
 }
-
 #ayudarte{
     background: url(./imagenes/edificios.jpg)no-repeat center  center/cover;
     padding: 3% 0 20% 0;
@@ -55,6 +115,53 @@ nav{
     font-weight: 300;
     text-align: center;
     margin: auto;
+}
+#titulo-videos{
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Crimson Text', serif;
+    font-weight: lighter;
+    color: #000000;
+    padding: 2% 0;
+}
+#caja-videos{
+    width: 100%;
+    margin-bottom: 2%;
+}
+#videos{
+    width: 100%;
+    height: 100%;
+}
+#caja-reproducir1{
+    width: 5.5%;
+    position: absolute;
+    margin: 8% 0 0 12%;
+    transition: all .2s ease-in-out;
+}
+#caja-reproducir2{
+    width: 5.5%;
+    position: absolute;
+    margin: 8% 0 0 47%;
+    transition: all .2s ease-in-out;
+}
+#caja-reproducir3{
+    width: 5.5%;
+    position: absolute;
+    margin: 8% 0 0 80.5%;
+    transition: all .2s ease-in-out;
+}
+#caja-reproducir1:hover{
+    transform: scale(1.5);
+}
+#caja-reproducir2:hover{
+    transform: scale(1.5);
+}
+#caja-reproducir3:hover{
+    transform: scale(1.5);
+}
+.reproducir1{
+    width: 100%;
+    height: 100%;
 }
 #vende-compra{
     height: 50%;
@@ -162,7 +269,90 @@ nav{
     display: inline-block;
     margin-top: -30%;
 }
-
+#redes-sociales{
+    background: url(./imagenes/edificios.jpg)no-repeat center  center/cover;
+    padding: 5% 0;
+}
+#siguenos{
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Crimson Text', serif;
+    font-weight: lighter;
+    color: #000000;
+    padding: 2% 0;
+    margin-bottom: 5%;
+}
+#caja-redes-sociales1{
+    margin: 0 0 0 15%;
+}
+#caja-redes-sociales2{
+    margin: 5% 0 0 30%;
+}
+#caja-youtube2{
+    width: 10%;
+    margin: 0 .3%;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+#youtube2{
+    width: 100%;
+    height: 100%;
+}
+#caja-facebook2{
+    width: 10%;
+    margin: 0 25%;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+#facebook2{
+    width: 100%;
+    height: 100%;
+}
+#caja-instagram2{
+    width: 10%;
+    margin: 0 .3%;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+#instagram2{
+    width: 100%;
+    height: 100%;
+}
+#caja-whatsapp2{
+    width: 12.5%;
+    margin: 0 .3%;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+#whatsapp2{
+    width: 100%;
+    height: 100%;
+}
+#caja-tiktok2{
+    width: 17.2%;
+    display: inline-block;
+    margin-left: 32%;
+    transition: all .2s ease-in-out;
+}
+#tik-tok2{
+    width: 100%;
+    height: 100%;
+}
+#caja-youtube2:hover{
+    transform: scale(1.5);
+}
+#caja-facebook2:hover{
+    transform: scale(1.5);
+}
+#caja-instagram2:hover{
+    transform: scale(1.5);
+}
+#caja-whatsapp2:hover{
+    transform: scale(1.5);
+}
+#caja-tiktok2:hover{
+    transform: scale(1.5);
+}
 #footer{
     height: fit-content;
     width: 100%;
@@ -201,13 +391,8 @@ nav{
         z-index: 0;
         width: 0;
         }
-    #barraLateral{
-        font-size: 4vw;
-        background-color: #171b22;
-        color: #ffffff;
-        border-radius: 50%;
-        opacity: .80;
-        margin-top: 0;
-        margin-left: 0;
-       }
+    #cajaLogo{
+        width: 0;
+        height: 0;
+        }
     }

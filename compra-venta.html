@@ -17,13 +17,12 @@
         }
     </style>
 </head>
-
 <body>
-  
-  <div>
-    <img src="imagenes/Logo-blancas.png" alt="Logo" id="logo">
-  </div>
+    <div id="cajaLogo"></div>
     <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+      <div>
+        <img src="imagenes/Logo-blancas.png" alt="Logo" id="logo">
+      </div>
         <header class="mdl-layout__header mdl-layout__header--waterfall" id="menu">
           <!-- Top row, always visible -->
           <div class="mdl-layout__header-row" id="ayuda">
@@ -31,12 +30,27 @@
             <!-- Title -->
             <span class="mdl-layout-title"></span>
             <div class="mdl-layout-spacer"></div>
+            <div id="caja-youtube">
+              <a href="https://www.youtube.com/channel/UCWw7rg76lVuwJgcsc293S8g"><img src="imagenes/youtube.png" alt="" id="youtube"></a>
+            </div>
+            <div id="caja-facebook">
+              <a href="https://www.facebook.com/safetoc"><img src="imagenes/facebook.png" alt="" id="facebook"></a>
+            </div>
+            <div id="caja-instagram">
+              <a href="https://www.instagram.com/safetoc/?hl"><img src="imagenes/instagram.png" alt="" id="instagram"></a>
+            </div>
+            <div id="caja-whatsapp">
+              <a href="https://api.whatsapp.com/send/?phone=525513857301&text&app_absent=0"><img src="imagenes/whatsapp.png" alt="" id="whatsapp"></a>
+            </div>
+            <div id="caja-tiktok">
+              <a href="https://www.tiktok.com/@safetoc?"><img src="imagenes/tik-tok.png" alt="" id="tik-tok"></a>
+            </div>
             <label for="" class="hogar">¿Cómo podemos ayudarte?</label>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                         mdl-textfield--floating-label mdl-textfield--align-right">
               <label class="mdl-button mdl-js-button mdl-button--icon"
                      for="waterfall-exp">
-                <i class="material-icons">search</i>
+                <i class="material-icons" style="z-index: 10;">search</i>
               </label>
               <div class="mdl-textfield__expandable-holder">
                 <input class="mdl-textfield__input" type="text" name="sample" placeholder="  Buscar en SafeToc"
@@ -49,24 +63,22 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->
             <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="inicio.html" style="font-size: larger;">Inicio</a>
-              <a class="mdl-navigation__link" href="compra-venta.html" style="font-size: larger;">Compra-venta</a>
-              <a class="mdl-navigation__link" href="Renta2.html" style="font-size: larger;">Renta</a>
-              <a class="mdl-navigation__link" href="" style="font-size: larger;">Club de inversionistas</a>
-              <a class="mdl-navigation__link" href="contactanos.html" style="font-size: larger;">Contáctanos</a>
+              <a class="mdl-navigation__link" href="inicio.html" style="font-size: 1.8vw;">Inicio</a>
+              <a class="mdl-navigation__link" href="compra-venta.html" style="font-size: 1.8vw;">Compra-venta</a>
+              <a class="mdl-navigation__link" href="Renta2.html" style="font-size: 1.8vw;">Renta</a>
+              <a class="mdl-navigation__link" href="club-inversionistas.html" style="font-size: 1.8vw;">Club de inversionistas</a>
+              <a class="mdl-navigation__link" href="contactanos.html" style="font-size: 1.8vw;">Contáctanos</a>
             </nav>
           </div>
         </header>
-        <div class="mdl-layout__drawer">
-          <span class="mdl-layout-title">Menú</span>
+        <div class="mdl-layout__drawer" id="barraLateral" style="color: white;">
+          <span class="mdl-layout-title" style="color: white;">Menú</span>
           <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="inicio.html">Inicio</a>
-            <a class="mdl-navigation__link" href="">Family Reunion</a>
-            <a class="mdl-navigation__link" href="">Blog</a>
-            <a class="mdl-navigation__link" href="">Bold</a> 
-            <a class="mdl-navigation__link" href="">Propiedades</a>
-            <a class="mdl-navigation__link" href="">Agente</a>
-            <a class="mdl-navigation__link" href="">Oficina</a>
+            <a class="mdl-navigation__link" href="inicio.html" style="color: white;">Inicio</a>
+            <a class="mdl-navigation__link" href="compra-venta.html" style="color: white;">Compra-venta</a>
+            <a class="mdl-navigation__link" href="Renta2.html" style="color: white;">Renta</a>
+            <a class="mdl-navigation__link" href="club-inversionistas.html" style="color: white;">Club de inversionistas</a> 
+            <a class="mdl-navigation__link" href="contactanos.html" style="color: white;">Contáctanos</a>
           </nav>
         </div>
         <main class="mdl-layout__content">

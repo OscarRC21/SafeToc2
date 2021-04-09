@@ -99,9 +99,15 @@ nav{
     height: 100%;
 }
 #imagen{
-    width: 53.1%;
+    width: 52.8%;
     float: left;
     margin-top: 3%;
+}
+.titulo-input{
+    font-size: 1.8vw;
+    text-align: left;
+    margin-left: 11%;
+    margin-bottom: 1%;
 }
 #inputs{
     width: 46.8%;
@@ -137,7 +143,7 @@ nav{
 }
 .nombre{
     display: block;
-    margin: 5% 0 0 10%;
+    margin: 0 0 3% 10%;
     font-size: 1.8vw;
     width: 85%;
     border-radius: 17px;

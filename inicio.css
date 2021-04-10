@@ -26,6 +26,57 @@
     margin-left: 4%;
 
 }
+#caja-logo-menu{
+    width: 40%;
+}
+#logo-menu{
+    width: 100%;
+}
+#bienvenido-menu{
+    font-size: 12px;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+}
+#redes-sociales-menu{
+    width: 100%;
+    padding-top: 14%;
+}
+#caja-youtube-menu{
+    width: 14%;
+    display: inline-block;
+}
+#youtube-menu{
+    width: 100%;
+}
+#caja-facebook-menu{
+    width: 14%;
+    display: inline-block;
+}
+#facebook-menu{
+    width: 100%;
+}
+#caja-instagram-menu{
+    width: 14%;
+    display: inline-block;
+}
+#instagram-menu{
+    width: 100%;
+}
+#caja-whatsapp-menu{
+    width: 14%;
+    display: inline-block;
+}
+#whatsapp-menu{
+    width: 100%;
+}
+#caja-tiktok-menu{
+    width: 20%;
+    display: inline-block;
+}
+#tik-tok-menu{
+    width: 100%;
+}
 .material-icons{
     color: white;
     background-color: #171b22;
@@ -124,42 +175,29 @@ nav{
     color: #000000;
     padding: 2% 0;
 }
-#caja-videos{
-    width: 100%;
-    margin-bottom: 2%;
-}
 #videos{
+    width: fit-content;
+    margin: 0;
+}
+.caja-video{
+    width: 33%;
+    display: inline-block;
+}
+.video{
     width: 100%;
     height: 100%;
 }
-#caja-reproducir1{
-    width: 5.5%;
+.caja-reproducir{
     position: absolute;
-    margin: 8% 0 0 12%;
+    width: 5.5%;
+    margin: 8% 0 0 15%;
     transition: all .2s ease-in-out;
 }
-#caja-reproducir2{
-    width: 5.5%;
-    position: absolute;
-    margin: 8% 0 0 47%;
-    transition: all .2s ease-in-out;
-}
-#caja-reproducir3{
-    width: 5.5%;
-    position: absolute;
-    margin: 8% 0 0 80.5%;
-    transition: all .2s ease-in-out;
-}
-#caja-reproducir1:hover{
+
+.caja-reproducir:hover{
     transform: scale(1.5);
 }
-#caja-reproducir2:hover{
-    transform: scale(1.5);
-}
-#caja-reproducir3:hover{
-    transform: scale(1.5);
-}
-.reproducir1{
+.reproducir{
     width: 100%;
     height: 100%;
 }
@@ -396,3 +434,278 @@ nav{
         height: 0;
         }
     }
+
+@media (max-width: 414px) {
+    #ayudarte{
+        background: url(./imagenes/edificios.jpg)no-repeat center  center/cover;
+        padding: 10% 0 30% 0;
+    }
+    .texto{
+        width: fit-content;
+        color: #ffffff;
+        font-size: 7.5vw;
+        padding-bottom: .3%;
+        font-family: 'Crimson Text', serif;
+        font-weight: 200;
+        margin: auto;
+    }
+    .texto2{
+        width: 100%;
+        color: #ffffff;
+        font-size: 4.8vw;
+        font-weight: 300;
+        text-align: center;
+        margin: auto;
+    }
+    #titulo-videos{
+        text-align: center;
+        font-size: 9vw;
+        font-family: 'Crimson Text', serif;
+        font-weight: lighter;
+        color: #000000;
+        padding: 2% 0;
+    }
+    .caja-video{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .video{
+        width: 100%;
+        height: 100%;
+    }
+    .caja-reproducir{
+        position: absolute;
+        width: 15%;
+        margin: 17% 0 0 34%;
+        transition: all .2s ease-in-out;
+    }
+    .caja-reproducir:hover{
+        transform: scale(1.5);
+    }
+    .reproducir{
+        width: 100%;
+        height: 100%;
+    }
+    #vende-compra{
+        width: 100%;
+        margin-top: 17%;
+    }
+    .v-c{
+        font-family: 'Crimson Text', serif;
+        font-weight: lighter;
+        width: 100%;
+        height: fit-content;
+        color: #000000;
+        position: absolute;
+        margin-top: -83%;
+    }
+    .titulo{
+        font-size: 9vw;
+        margin: 0 0 0 90px;
+    }
+    .sub-titulo{
+        width: 85%;
+        font-size: 5vw;
+        text-align: left;
+        margin-top: 45%;
+        margin-left: 1%;
+        position: absolute;
+    }
+    #casita{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    #hombre-mujer{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #invierte{
+        width: 100%;
+        margin-top: 23%;
+    }
+    
+    .invierte-texto{
+        font-family: 'Crimson Text', serif;
+        font-weight: lighter;
+        width: 100%;
+        height: fit-content;
+        color: #000000;
+        position: absolute;
+        margin-top: -26%;
+    }
+    .titulo1{
+        font-size: 9vw;
+        margin: 0 0 0 150px;
+    }
+    .sub-titulo1{
+        width: 85%;
+        font-size: 5vw;
+        text-align: right;
+        margin-top: 43%;
+        z-index: 10;
+        margin-left: 14%;
+        position: absolute;
+    }
+    #img-invierte{
+        width: 70%;
+        display: block;
+        position: relative;
+        margin-right: 15%;
+        }
+    #monedas{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #credito{
+        width: 100%;
+        margin-top: 55%;
+    }
+    .cre{
+        font-family: 'Crimson Text', serif;
+        font-weight: lighter;
+        width: 100%;
+        height: fit-content;
+        color: #000000;
+        position: absolute;
+        margin-top: -87%;
+    }
+    .titulo2{
+        font-size: 9vw;
+        margin: 0 0 0 160px;
+        
+    }
+    .sub-titulo2{
+        width: 82%;
+        font-size: 5vw;
+        text-align: left;
+        margin-top: 46%;
+        margin-left: 1%;
+        position: absolute;
+    }
+    #tarjeta{
+        width: 70%;
+        display: block;
+        margin: auto;
+        padding-bottom: 20%;
+    }
+    #hombre-mujer1{
+        width: 100%;
+        height: 100%;
+    }
+    #redes-sociales{
+        background: url(./imagenes/edificios.jpg)no-repeat center  center/cover;
+        padding: 5% 0;
+    }
+    #siguenos{
+        text-align: center;
+        font-size: 9vw;
+        font-family: 'Crimson Text', serif;
+        font-weight: lighter;
+        color: #000000;
+        padding: 2% 0;
+        margin-bottom: 8%;
+    }
+    #caja-redes-sociales1{
+        margin: 0;
+    }
+    #caja-redes-sociales2{
+        margin: 5% 0 0 18%;
+    }
+    #caja-youtube2{
+        width: 14%;
+        margin: 0 .3%;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+    }
+    #youtube2{
+        width: 100%;
+        height: 100%;
+    }
+    #caja-facebook2{
+        width: 14%;
+        margin: 0 25%;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+    }
+    #facebook2{
+        width: 100%;
+        height: 100%;
+    }
+    #caja-instagram2{
+        width: 14%;
+        margin: 0 .3%;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+    }
+    #instagram2{
+        width: 100%;
+        height: 100%;
+    }
+    #caja-whatsapp2{
+        width: 17%;
+        margin: 0 .3%;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+    }
+    #whatsapp2{
+        width: 100%;
+        height: 100%;
+    }
+    #caja-tiktok2{
+        width: 24%;
+        display: inline-block;
+        margin-left: 32%;
+        transition: all .2s ease-in-out;
+    }
+    #tik-tok2{
+        width: 100%;
+        height: 100%;
+    }
+    #caja-youtube2:hover{
+        transform: scale(1.5);
+    }
+    #caja-facebook2:hover{
+        transform: scale(1.5);
+    }
+    #caja-instagram2:hover{
+        transform: scale(1.5);
+    }
+    #caja-whatsapp2:hover{
+        transform: scale(1.5);
+    }
+    #caja-tiktok2:hover{
+        transform: scale(1.5);
+    }
+    #footer{
+        background-color: #171b22;
+    }
+    #logo2{
+        width: 28%;
+        margin: 0;
+    }
+    #imagenf{
+        height: 100%;
+        width: 100%;
+    }
+    .columna a:hover{
+        color: #ffffff;
+    }
+    .columna{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+        color: #ffffff;
+        font-size: 5vw;
+        font-style: normal;
+    }
+    .columna a{
+        display: block;
+        color: #ffffff;
+        padding: 2% 0;
+    }
+}

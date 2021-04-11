@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+    integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+  <title>Mi primer CRUD con Firebase</title>
+
+  <!-- Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+  <center>
+  <div class="container"><br><br>
+    <h1>Reservacion </h1><br><br>
+    Numero de personas
+    <input type="number" id="personas" class="form-control my-2" required>
+    Fecha de Llegada<br>
+    <input type="date" id="fechallegada" class="form-control my-2" required>
+    Fecha de Salida<br>
+    <input type="date" id="fechasalida" class="form-control my-2" required>
+    Habitaciones<br>
+    <input type="number" id="habitaciones" class="form-control my-2" required>
+    <br><br><br>
+    <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button>
+    <br><br><br><br><br><br>
+    <table class="table my-1">
+      <h1>Ticket de Reservacion</h1>
+      <br><br><br>
+      <tbody id="tabla">
+      </tbody>
+    </table>
+  </div>
+  <br><br><br><br><br><br>
+</center>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+    integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
+  <script src="ctrl_reservacion.js"></script>
+</body>
+
+</html>

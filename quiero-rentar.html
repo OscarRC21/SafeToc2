@@ -1,134 +1,147 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeToc</title>
-    <link rel="stylesheet" href="quiero-rentar.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <style>
-        .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
-          padding-right: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeToc</title>
+  <link rel="stylesheet" href="quiero-rentar.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!-- Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+  <style>
+    .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+      padding-right: 0;
+    }
+  </style>
 </head>
+
 <body>
   <div id="cajaLogo"></div>
   <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
     <div>
       <img src="imagenes/Logo-blancas.png" alt="Logo" id="logo">
     </div>
-        <header class="mdl-layout__header mdl-layout__header--waterfall" id="menu">
-          <!-- Top row, always visible -->
-          <div class="mdl-layout__header-row" id="ayuda">
-            <label for="" class="hogar" id="bienvenido">¡Bienvenido a tu hogar!</label>
-            <!-- Title -->
-            <span class="mdl-layout-title"></span>
-            <div class="mdl-layout-spacer"></div>
-            <div id="caja-youtube">
-              <a href="https://www.youtube.com/channel/UCWw7rg76lVuwJgcsc293S8g"><img src="imagenes/youtube.png" alt="" id="youtube"></a>
-            </div>
-            <div id="caja-facebook">
-              <a href="https://www.facebook.com/safetoc"><img src="imagenes/facebook.png" alt="" id="facebook"></a>
-            </div>
-            <div id="caja-instagram">
-              <a href="https://www.instagram.com/safetoc/?hl"><img src="imagenes/instagram.png" alt="" id="instagram"></a>
-            </div>
-            <div id="caja-whatsapp">
-              <a href="https://api.whatsapp.com/send/?phone=525513857301&text&app_absent=0"><img src="imagenes/whatsapp.png" alt="" id="whatsapp"></a>
-            </div>
-            <div id="caja-tiktok">
-              <a href="https://www.tiktok.com/@safetoc?"><img src="imagenes/tik-tok.png" alt="" id="tik-tok"></a>
-            </div>
-            <label for="" class="hogar">¿Cómo podemos ayudarte?</label>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+    <header class="mdl-layout__header mdl-layout__header--waterfall" id="menu">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row" id="ayuda">
+        <label for="" class="hogar" id="bienvenido">¡Bienvenido a tu hogar!</label>
+        <!-- Title -->
+        <span class="mdl-layout-title"></span>
+        <div class="mdl-layout-spacer"></div>
+        <div id="caja-youtube">
+          <a href="https://www.youtube.com/channel/UCWw7rg76lVuwJgcsc293S8g"><img src="imagenes/youtube.png" alt=""
+              id="youtube"></a>
+        </div>
+        <div id="caja-facebook">
+          <a href="https://www.facebook.com/safetoc"><img src="imagenes/facebook.png" alt="" id="facebook"></a>
+        </div>
+        <div id="caja-instagram">
+          <a href="https://www.instagram.com/safetoc/?hl"><img src="imagenes/instagram.png" alt="" id="instagram"></a>
+        </div>
+        <div id="caja-whatsapp">
+          <a href="https://api.whatsapp.com/send/?phone=525513857301&text&app_absent=0"><img src="imagenes/whatsapp.png"
+              alt="" id="whatsapp"></a>
+        </div>
+        <div id="caja-tiktok">
+          <a href="https://www.tiktok.com/@safetoc?"><img src="imagenes/tik-tok.png" alt="" id="tik-tok"></a>
+        </div>
+        <label for="" class="hogar">¿Cómo podemos ayudarte?</label>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                         mdl-textfield--floating-label mdl-textfield--align-right">
-              <label class="mdl-button mdl-js-button mdl-button--icon"
-                     for="waterfall-exp">
-                <i class="material-icons" style="z-index: 10;">search</i>
-              </label>
-              <div class="mdl-textfield__expandable-holder">
-                <input class="mdl-textfield__input" type="text" name="sample" placeholder="  Buscar en SafeToc"
-                       id="waterfall-exp">
-              </div>
-            </div>
+          <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+            <i class="material-icons" style="z-index: 10;">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample" placeholder="  Buscar en SafeToc"
+              id="waterfall-exp">
           </div>
-          <!-- Bottom row, not visible on scroll -->
-          <div class="mdl-layout__header-row" id="visible">
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation -->
-            <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="inicio.html" style="font-size: 1.8vw;">Inicio</a>
-              <a class="mdl-navigation__link" href="compra-venta.html" style="font-size: 1.8vw;">Compra-venta</a>
-              <a class="mdl-navigation__link" href="Renta2.html" style="font-size: 1.8vw;">Renta</a>
-              <a class="mdl-navigation__link" href="club-inversionistas.html" style="font-size: 1.8vw;">Club de inversionistas</a>
-              <a class="mdl-navigation__link" href="contactanos.html" style="font-size: 1.8vw;">Contáctanos</a>
-            </nav>
-          </div>
-        </header>
-        <div class="mdl-layout__drawer" id="barraLateral" style="color: white;">
-          <span class="mdl-layout-title" style="color: white;">Menú</span>
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="inicio.html" style="color: white;">Inicio</a>
-            <a class="mdl-navigation__link" href="compra-venta.html" style="color: white;">Compra-venta</a>
-            <a class="mdl-navigation__link" href="Renta2.html" style="color: white;">Renta</a>
-            <a class="mdl-navigation__link" href="club-inversionistas.html" style="color: white;">Club de inversionistas</a> 
-            <a class="mdl-navigation__link" href="contactanos.html" style="color: white;">Contáctanos</a>
-          </nav>
         </div>
-        <main class="mdl-layout__content">
-          <div class="page-content">
-             <div id="imagen">
-              <img src="imagenes/Quiero rentar un inmueble.png" alt="" id="negocio">
-              </div>
-                 <div id="inputs">
-                  <b id="uno">ENCUENTRE TU PRÓXIMO HOGAR A RENTAR</b>
-                  <img src="imagenes/linea.png" alt="linea" id="linea">
-                 <b id="dos">Para poder brindarte un mejor servicio personalizado, por favor, contesta esta breve encuesta.</b>
-                 <input type="text" name="oscar" class="nombre" placeholder="  Nombre">
-                 <input type="email" name="oscar" class="nombre" placeholder="  E-mail">
-                 <input type="text" name="oscar" class="nombre" placeholder="  Celular">
-                    <select name="propiedad" id="propiedad">
-                        <option>Propiedad</option>
-                        <option>Casa</option>
-                        <option>Departamento</option>
-                        <option>Local</option>
-                        <option>Terreno</option>
-                        <option>Oficina</option>
-                        <option>Bodega</option>
-                    </select>
-                 <input type="text" name="oscar" class="nombre" placeholder="  Ubicación (Alcaldía, Zona o Colonia)">
-                 <input type="text" name="oscar" class="nombre" placeholder="  Presupuesto">
-                 <input type="text" name="oscar" class="nombre" placeholder="  Número de recámaras deseadas">
-                 <input type="text" name="oscar" class="nombre" placeholder="  Características que buscas en tu inmueble">
-                 <button id="enviar">Enviar</button>
-              </div>
-            <footer id="footer">
-              <div id="logo2">
-                <img src="imagenes/Logo-blancas.png" alt="" id="imagenf">
-              </div>
-              <div class="columna">
-                <a href="inicio.html">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Bienes Raíces</a>
-              </div>
-              <div class="columna">
-                <a href="#">Nosotros</a>
-                <a href="#">Privacidad</a>
-                <a href="index.html">Enciclopedia</a>
-              </div>
-              <div class="columna"> 
-                <a href="contactanos.html" id="info">Contáctanos</a>
-                <a href="#">+52 55 1385 7301</a>
-                <a href="#">safetoc@gmail.com</a>
-              </div>
-            </footer>
-        </div>
-        </main>
       </div>
+      <!-- Bottom row, not visible on scroll -->
+      <div class="mdl-layout__header-row" id="visible">
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="inicio.html" style="font-size: 1.8vw;">Inicio</a>
+          <a class="mdl-navigation__link" href="compra-venta.html" style="font-size: 1.8vw;">Compra-venta</a>
+          <a class="mdl-navigation__link" href="Renta2.html" style="font-size: 1.8vw;">Renta</a>
+          <a class="mdl-navigation__link" href="club-inversionistas.html" style="font-size: 1.8vw;">Club de
+            inversionistas</a>
+          <a class="mdl-navigation__link" href="contactanos.html" style="font-size: 1.8vw;">Contáctanos</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer" id="barraLateral" style="color: white;">
+      <span class="mdl-layout-title" style="color: white;">Menú</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="inicio.html" style="color: white;">Inicio</a>
+        <a class="mdl-navigation__link" href="compra-venta.html" style="color: white;">Compra-venta</a>
+        <a class="mdl-navigation__link" href="Renta2.html" style="color: white;">Renta</a>
+        <a class="mdl-navigation__link" href="club-inversionistas.html" style="color: white;">Club de inversionistas</a>
+        <a class="mdl-navigation__link" href="contactanos.html" style="color: white;">Contáctanos</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <div id="imagen">
+          <img src="imagenes/Quiero rentar un inmueble.png" alt="" id="negocio">
+        </div>
+        <form id="forma">
+          <div id="inputs">
+            <b id="uno">ENCUENTRE TU PRÓXIMO HOGAR A RENTAR</b>
+            <img src="imagenes/linea.png" alt="linea" id="linea">
+            <b id="dos">Para poder brindarte un mejor servicio personalizado, por favor, contesta esta breve encuesta.</b>
+            <input type="text" name="oscar" id="nombre" class="nombre" placeholder="  Nombre" required="required">
+            <input type="email" name="oscar" id="email" class="nombre" placeholder="  E-mail" required="required">
+            <input type="tel" name="oscar" id="telefono" class="nombre" placeholder="  Celular" required="required">
+            <select name="propiedad" id="propiedad">
+              <option>Propiedad</option>
+              <option>Casa</option>
+              <option>Departamento</option>
+              <option>Local</option>
+              <option>Terreno</option>
+              <option>Oficina</option>
+              <option>Bodega</option>
+            </select>
+            <input type="text" name="oscar" id="ubicacion" class="nombre" placeholder="  Ubicación (Alcaldía, Zona o Colonia)" required="required">
+            <input type="number" min="0.00" max="10000.00" step="1" name="oscar" id="presupuesto" class="nombre" placeholder="  Presupuesto" required="required">
+            <input type="number" name="oscar" id="no_recamaras" class="nombre" placeholder="  Número de recámaras deseadas" required="required">
+            <input type="text" name="oscar" id="caract" class="nombre" placeholder="  Características que buscas en tu inmueble" required="required">
+            <button id="enviar" name="enviar" value="enviar">Enviar</button>
+          </div>
+        </form>
+        <footer id="footer">
+          <div id="logo2">
+            <img src="imagenes/Logo-blancas.png" alt="" id="imagenf">
+          </div>
+          <div class="columna">
+            <a href="inicio.html">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Bienes Raíces</a>
+          </div>
+          <div class="columna">
+            <a href="#">Nosotros</a>
+            <a href="#">Privacidad</a>
+            <a href="index.html">Enciclopedia</a>
+          </div>
+          <div class="columna">
+            <a href="contactanos.html" id="info">Contáctanos</a>
+            <a href="#">+52 55 1385 7301</a>
+            <a href="#">safetoc@gmail.com</a>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="ctrl_quiero_rentar.js"></script>
 </body>
+
 </html>

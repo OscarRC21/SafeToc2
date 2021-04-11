@@ -25,6 +25,57 @@
 #bienvenido{
     margin-left: 4%;
 }
+#caja-logo-menu{
+    width: 40%;
+}
+#logo-menu{
+    width: 100%;
+}
+#bienvenido-menu{
+    font-size: 12px;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+}
+#redes-sociales-menu{
+    width: 100%;
+    padding-top: 14%;
+}
+#caja-youtube-menu{
+    width: 14%;
+    display: inline-block;
+}
+#youtube-menu{
+    width: 100%;
+}
+#caja-facebook-menu{
+    width: 14%;
+    display: inline-block;
+}
+#facebook-menu{
+    width: 100%;
+}
+#caja-instagram-menu{
+    width: 14%;
+    display: inline-block;
+}
+#instagram-menu{
+    width: 100%;
+}
+#caja-whatsapp-menu{
+    width: 14%;
+    display: inline-block;
+}
+#whatsapp-menu{
+    width: 100%;
+}
+#caja-tiktok-menu{
+    width: 20%;
+    display: inline-block;
+}
+#tik-tok-menu{
+    width: 100%;
+}
 .material-icons{
     color: white;
     background-color: #171b22;
@@ -226,4 +277,131 @@ nav{
         width: 0;
         height: 0;
         }
+    }
+@media (max-width: 415px) {
+    #llamada{
+        background: url(./imagenes/contacto.jpg)no-repeat center  center/cover;
+        padding: 15% 0;
+    }
+    .texto{
+        width: fit-content;
+        color: #ffffff;
+        font-size: 6vw;
+        padding-bottom: 2%;
+        font-family: 'Crimson Text', serif;
+        font-weight: 200;
+        margin-left: 52%;
+    }
+    .texto2{
+        width: 50%;
+        color: #ffffff;
+        font-size: 3.5vw;
+        font-weight: 300;
+        text-align: center;
+        margin-left: 49%;
+    }
+    #contenedor{
+        height: 50%;
+        width: 100%;
+    }
+    #social{
+        font-size: 5vw;
+        font-family: 'Crimson Text', serif;
+        font-weight: lighter;
+        width: 45.3%;
+        height: 50%;
+        color: #000000;
+        text-align: center;
+        margin: 10% 0 0 0 ;
+        float: left;
+    }
+    #vertical{
+        width: .7%;
+        float: left;
+    }
+    #telefono{
+        width: 54%;
+        height: 100%;
+        float: left;
+    }
+    #llamada2{
+        width: 100%;
+        height: 100%;
+    }
+    #uno{
+        font-size: 6vw;
+        font-family: 'Crimson Text', serif;
+        font-weight: lighter;
+        margin-left: 0;
+        margin-bottom: 0;
+        float: left;
+    }
+    #dos{
+        font-size: 3vw;
+        font-weight: normal;
+        margin-left: 0;
+        float: left;
+    }
+    #linea{
+        width: 74%;
+        margin: 0 0 0 12%;
+    }
+    #contenedor2{
+        width: 100%;
+        margin-top: 5%;
+    }
+    #inputs{
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+    #enviar{
+        margin: 2% 0 0 43%;
+        background-color: gainsboro;
+        font-size: 4vw;
+        padding: 0 2%;
+        border-radius: 25px;
+        width: fit-content;
+        color: black;
+    }
+    .nombre{
+        display: block;
+        margin: auto;
+        margin-bottom: 2%;
+        font-size: 3.5vw;
+        width: 90vw;
+        border-radius: 17px;
+        border: 3px solid #000000;
+        outline-style: none;
+    }
+    #footer{
+        background-color: #171b22;
+    }
+    #caja-footer{
+        margin-left: 0;
+    }
+    #logo2{
+        width: 28%;
+        margin: 0;
+    }
+    #imagenf{
+        height: 100%;
+        width: 100%;
+    }
+    .columna a:hover{
+        color: #ffffff;
+    }
+    .columna{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+        color: #ffffff;
+        font-size: 5vw;
+        font-style: normal;
+    }
+    .columna a{
+        display: block;
+        color: #ffffff;
+        padding: 2% 0;
+    }
     }

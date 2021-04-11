@@ -25,6 +25,57 @@
 #bienvenido{
     margin-left: 4%;
 }
+#caja-logo-menu{
+    width: 40%;
+}
+#logo-menu{
+    width: 100%;
+}
+#bienvenido-menu{
+    font-size: 12px;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+}
+#redes-sociales-menu{
+    width: 100%;
+    padding-top: 14%;
+}
+#caja-youtube-menu{
+    width: 14%;
+    display: inline-block;
+}
+#youtube-menu{
+    width: 100%;
+}
+#caja-facebook-menu{
+    width: 14%;
+    display: inline-block;
+}
+#facebook-menu{
+    width: 100%;
+}
+#caja-instagram-menu{
+    width: 14%;
+    display: inline-block;
+}
+#instagram-menu{
+    width: 100%;
+}
+#caja-whatsapp-menu{
+    width: 14%;
+    display: inline-block;
+}
+#whatsapp-menu{
+    width: 100%;
+}
+#caja-tiktok-menu{
+    width: 20%;
+    display: inline-block;
+}
+#tik-tok-menu{
+    width: 100%;
+}
 .material-icons{
     color: white;
     background-color: #171b22;
@@ -94,7 +145,6 @@ nav{
     margin-top: 3%;
     width: 100%;
 }
-
 #contenedor{
     display: inline-block;
     width: 49%;
@@ -182,3 +232,157 @@ nav{
         height: 0;
         }
     }
+    @media (max-width: 1023px){
+        #contenedor{
+            display: block;
+            width: 60%;
+            margin: auto;
+        }
+        #contenedor1{
+            display: block;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 3%;
+        }
+        #comprar{
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        #img-comprar{
+            width: 100%;
+            height: 100%;
+        }
+        #vender{
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        .caja{
+            text-align: center;
+            font-family: 'Crimson Text', serif;
+            font-size: 3vw;
+            font-weight: lighter;
+            display: block;
+            margin-bottom: -1.6%;
+            position: relative;
+        }
+        #img-vender{
+            width: 100%;
+            height: 100%;
+        }
+        .linea{
+            width: 90%;
+            height: 5.4px;
+            margin-left: 5%;
+        }
+        #footer{
+            background-color: #171b22;
+            float: inline-end;
+        }
+        #logo2{
+            width: 12%;
+            margin: 0;
+        }
+        #imagenf{
+            height: 100%;
+            width: 100%;
+        }
+        #caja-footer{
+            margin-left: 20%;
+        }
+        .columna a:hover{
+            color: #ffffff;
+        }
+        .columna{
+            display: inline-block;
+            width: fit-content;
+            text-align: center;
+            margin: 0 5%;
+            color: #ffffff;
+            font-size: 2vw;
+            font-style: normal;
+        }
+        .columna a{
+            display: block;
+            color: #ffffff;
+            padding: 2% 0;
+        }
+    }
+@media (max-width: 415px){
+    #contenedor{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    #contenedor1{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+    #comprar{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    #img-comprar{
+        width: 100%;
+        height: 100%;
+    }
+    #vender{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .caja{
+        text-align: center;
+        font-family: 'Crimson Text', serif;
+        font-size: 6vw;
+        font-weight: lighter;
+        display: block;
+        margin-bottom: -1.6%;
+        position: relative;
+    }
+    #img-vender{
+        width: 100%;
+        height: 100%;
+    }
+    .linea{
+        width: 90%;
+        height: 5.4px;
+        margin-left: 5%;
+    }
+    #footer{
+        background-color: #171b22;
+    }
+    #caja-footer{
+        margin-left: 0;
+    }
+    #logo2{
+        width: 28%;
+        margin: 0;
+    }
+    #imagenf{
+        height: 100%;
+        width: 100%;
+    }
+    .columna a:hover{
+        color: #ffffff;
+    }
+    .columna{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+        color: #ffffff;
+        font-size: 5vw;
+        font-style: normal;
+    }
+    .columna a{
+        display: block;
+        color: #ffffff;
+        padding: 2% 0;
+    }
+}
